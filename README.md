@@ -5,7 +5,8 @@ A simple Node.js-based command line MCP Client that exposes commands for listing
 ### Why?
 
 There are other command line MCP Clients out there, but all of them spawn the referenced MCP Servers for every tool call.
-`mcp-cmd` is different: you use its CLI to start and stop MCP servers, and the servers run in the background.
+
+**`mcp-cmd` is different:** you use its CLI to start and stop MCP servers, and the servers run **in the background**. That means successive tool calls to an MCP Server are handled by the same running instance of that server.
 
 ### Usage
 

@@ -1,26 +1,28 @@
 {
   "name": "mcp-cmd",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Node.js CLI for managing persistent MCP servers in the background",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "build": "microbundle"
+  "main": "dist/mcp-cmd.js",
+  "bin": {
+    "mcp-cmd": "./dist/mcp-cmd.js"
   },
-  "exports": {
-    "import": "./dist/mcp-cmd.js",
-    "default": "./dist/mcp-cmd.cjs"
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/mcp-cmd.js --platform=node --alias:cross-spawn=./src/cross-spawn.js --format=esm --target=node20"
   },
   "keywords": [
     "mcp",
-    "mcp-client"
+    "mcp-client",
+    "model-context-protocol"
   ],
   "author": "Jason Miller (https://jasonformat.com)",
-  "licence": "MIT",
+  "license": "MIT",
+  "repository": "developit/mcp-cmd",
+  "homepage": "https://github.com/developit/mcp-cmd",
   "devDependencies": {
     "@modelcontextprotocol/sdk": "^1.13.3",
     "@types/node": "^24.0.10",
-    "microbundle-2": "^0.2.0",
+    "esbuild": "^0.25.5",
     "sade": "^1.8.1"
   }
 }

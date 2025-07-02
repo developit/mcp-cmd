@@ -14,9 +14,9 @@ importers:
       '@types/node':
         specifier: ^24.0.10
         version: 24.0.10
-      microbundle-2:
-        specifier: ^0.2.0
-        version: 0.2.0(esbuild@0.25.5)
+      esbuild:
+        specifier: ^0.25.5
+        version: 0.25.5
       sade:
         specifier: ^1.8.1
         version: 1.8.1
@@ -369,12 +369,6 @@ packages:
   merge-descriptors@2.0.0:
     resolution: {integrity: sha512-Snk314V5ayFLhp3fkUREub6WtjBfPdCPY1Ln8/8munuLuiYhsABgBVWsozAG+MWMbVEvcdcpbi9R7ww22l9Q3g==}
     engines: {node: '>=18'}
-
-  microbundle-2@0.2.0:
-    resolution: {integrity: sha512-ymWfVJJK+slg0I4EXN80mJ3tai0iKhMNYvPjvW7lNyJTWJeKaYv8y6kLka92H0/WVHRbNBFKW9oEGuDY/p0t3Q==}
-    hasBin: true
-    peerDependencies:
-      esbuild: '*'
 
   mime-db@1.54.0:
     resolution: {integrity: sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==}
@@ -870,10 +864,6 @@ snapshots:
   media-typer@1.1.0: {}
 
   merge-descriptors@2.0.0: {}
-
-  microbundle-2@0.2.0(esbuild@0.25.5):
-    dependencies:
-      esbuild: 0.25.5
 
   mime-db@1.54.0: {}
 
