@@ -1,0 +1,26 @@
+{
+  "name": "mcp-cmd",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "microbundle"
+  },
+  "exports": {
+    "import": "./dist/mcp-cmd.js",
+    "default": "./dist/mcp-cmd.cjs"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-client"
+  ],
+  "author": "Jason Miller (https://jasonformat.com)",
+  "licence": "MIT",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.3",
+    "@types/node": "^24.0.10",
+    "microbundle-2": "^0.2.0",
+    "sade": "^1.8.1"
+  }
+}
